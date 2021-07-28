@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>GAV-Empregos</title>
+<meta charset="utf-8" />
+<!--   <link href="stiles".css" rel="stylesheet" media="all" />
+    <script src="javascript.js"></script>-->
+</head>
+
+<body>
+<form name="meu_form">
+
+  <h1>Inscreva-se!</h1>
+<p>
+  Quer fazer parte do time de pessoas que estão dando um novo rumo para a vida profissional? Então preencha o formulário a seguir com seus dados!
+    Os campos com um asterísco (*) são de preenchimento obrigatório.
+</p>
+
+<fieldset>
+<label for="nome">Nome*</label>
+  <input type="text" id="nomeid" placeholder="Seu Nome Completo" required="required" name="nome" />
+  
+  <label for="cpf">CPF*</label>
+  <input type="text" id="cpfid" required="required" name="cpf" />
+  
+  <label for="rg">RG*</label>
+  <input type="text" id="rgid" required="required" name="RG" />
+  
+  <label for="date">Sua data de nascimento*</label>
+  <input type="date" placeholder="DD/MM/AAAA" id="dataid" required="required">
+<br>
+
+  <span>Sexo: *</span>
+  <input type="radio" name="Sexo" id="feminino" value="Feminino" required unchecked><label for="Feminino">Feminino</label>
+  <input type="radio" name="Sexo" id="masculino" value="Masculino" required unchecked><label for="Masculino">Masculino</label>
+
+  <label for="fone">Telefone</label>
+  <input type="tel" id="foneid" placeholder="(11)2345-6789" name="fone" />
+  
+  <label for="fone">Celular*</label>
+  <input type="tel" id="celid" placeholder="(11)92345-6789" name="fone"required />
+
+  <label for="email">Email*</label>
+  <input type="email" id="emailid" placeholder=seu.email@example.com name="email" />
+
+<br>
+  <span>É pessoa com deficiência? *</span>
+  <input type="radio" name="deficiência" id="fisico" value="Deficiente Físico" required unchecked><label for="Deficiente Físico">Deficiente Físico</label>
+  <input type="radio" name="deficiência" id="intelectual" value="Intelectual" required unchecked><label for="Intelectual">Intelectual</label>
+  <input type="radio" name="deficiência" id="surdo" value="Auditiva" required unchecked><label for="Auditiva">Auditiva</label>
+  <input type="radio" name="deficiência" id="visual" value="Visual" required unchecked><label for="Visual">Visual</label>
+  <input type="radio" name="deficiência" id="naotenho" value="Não sou deficiente" required unchecked><label for="Não sou deficiente">Não sou deficiente</label>
+</fieldset>
+
+  <p>
+    Endereço
+  </p>
+
+  <fieldset>
+  <input type="text" id="enderecoid" placeholder="Seu Endereço*" required="required" name="endereço" />
+  <input type="text" id="numeroid" placeholder="número*" required="required" name="número" />
+  <input type="text" id="complementoid" placeholder="Complemento" name="complemento" /><br>
+  <input type="text" id="bairroid" placeholder="Bairro*" required="required" name="bairro" />
+  <input type="text" id="cepid" placeholder="CEP*" required="required" name="cep" />
+  <input type="text" id="cidadeid" placeholder="Cidade*" required="required" name="cidade" />
+  <select name="estado" id="estadoid" required>
+    <option value="select">Selecione</option>  
+    <option value="acre">AC</option>
+    <option value="alagoas">AL</option>
+    <option value="amapa">AP</option>
+    <option value="amazonas">AM</option>
+    <option value="bahia">BA</option>
+    <option value="ceara">CE</option>
+    <option value="brasilia">DF</option>
+    <option value="espirito">ES</option>
+    <option value="goias">GO>/option>
+    <option value="maranhao">MA</option>
+    <option value="matogrosso">MT</option>
+    <option value="matogrossosul">MS</option>
+    <option value="minas">MG</option>
+    <option value="para">PA</option>
+    <option value="paraiba">PB</option>
+    <option value="parana">PR</option>
+    <option value="pernambuco">PE</option>
+    <option value="piaui">PI</option>
+    <option value="roraima">RR</option>
+    <option value="rondonia">RO</option>
+    <option value="rio">RJ</option>
+    <option value="rionorte">RN</option>
+    <option value="Riogrande">RS</option>
+    <option value="santacatarina">SC</option>
+    <option value="saopaulo">SP</option>
+    <option value="sergipe">SE</option>
+    <option value="tocantins">TO</option>
+    </select>
+    </fieldset>
+<br>
+
+<fieldset>
+  <textarea placeholder="Conte detalhadamente suas experiências profissionais:"></textarea>
+<br>
+  <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+</fieldset>
+</form>
+</body>
+</html>
+
