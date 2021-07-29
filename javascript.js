@@ -17,7 +17,7 @@ function Enviar() {
     var estado = document.getElementById("estadoid");
     
     if (nome.value != "" && cpf.value != "" && rg.value != "" && data.value != "" && sexo.value != "" && deficiencia.value != "" && cel.value != "" && email.value != "" && endereco.value != "" && numero.value != "" && bairro.value != "" && cep.value != "" && cidade.value != "" && estado.value != "") {
-        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+        alert('Parabéns, ' + nome.value + ' seus dados foram encaminhados com sucesso!');
     }
 
 }
